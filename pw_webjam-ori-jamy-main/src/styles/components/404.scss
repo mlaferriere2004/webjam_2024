@@ -1,0 +1,26 @@
+.error__404 {
+    .heroAbsolute {
+        height: 900px;
+    }
+    padding: 0;
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            h1 {
+                font-weight: 400;
+            }
+            h3 {
+                font-weight: 400;
+                color: var(--color-white);
+                text-transform: uppercase;
+                margin-top: 30px;
+            }
+        }
+    }
+}

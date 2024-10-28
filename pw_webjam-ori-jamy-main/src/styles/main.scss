@@ -1,0 +1,54 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Zen+Dots&display=swap');
+@import url('');
+
+// TOOLS
+// mixins et fonctions utilisés globalement dans le SCSS (Sass)
+@import 'tools/cover';
+@import 'tools/typo';
+
+// SETTINGS
+// Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
+@import 'settings/colors';
+@import 'settings/easing';
+@import 'settings/fonts';
+@import 'settings/dimensions';
+
+// GENERIC
+// Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
+@import 'generic/normalize';
+@import 'generic/reset';
+
+// ELEMENTS
+// Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
+@import 'elements/body';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/wrapper';
+
+// COMPONENTS
+// Composants d'interface utilisateur spécifiques.
+// C’est là que la majorité de notre travail a lieu.
+@import 'components/header';
+@import 'components/hero';
+@import 'components/cards';
+@import 'components/footer';
+@import 'components/404';
+@import 'components/accueil';
+@import 'components/credits';
+@import 'components/team';
+@import 'components/transports';
+@import 'components/transport';
+@import 'components/scrolly';
+@import 'components/scrollbar';
+@import 'components/titre';
+@import 'components/icons';
+@import 'components/carousel';
+@import 'components/formulaire';
+@import 'components/membre';
+@import '../../node_modules/swiper/swiper-bundle'; // important pour le carousel sinon ça marche pas
+
+// UTILITIES
+// Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
+@import 'utilities/accessibility';
+@import 'utilities/layout';

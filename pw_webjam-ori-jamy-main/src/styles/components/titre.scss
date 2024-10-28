@@ -1,0 +1,51 @@
+// en gros
+// div.titre avec dedans le titre (h1, h2 ou h3) et l'img
+// l'img a la classe banner
+// on rajoute la classe titreDroite ou titreGauche selon de quel bord est le titre
+
+.titre {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    span {
+        display: block;
+        background-color: var(--color-bg-primary);
+        width: 300%;
+        height: 50%;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+        padding-left: 100px;
+    }
+    h1,
+    h2,
+    h3 {
+        padding: 10% 0;
+        color: var(--color-white);
+        min-width: 300px;
+    }
+    img.banner {
+        position: absolute;
+        min-width: 2000px;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+
+        object-fit: contain;
+        right: 0;
+        margin-right: -40%;
+    }
+}
+
+.titreGauche img.banner {
+    right: 0;
+    margin-right: -50%;
+    transform: scaleX(1);
+}
+
+.titreDroite img.banner {
+    left: 0;
+    margin-left: -50%;
+    transform: scaleX(-1);
+}
